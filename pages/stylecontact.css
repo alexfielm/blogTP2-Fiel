@@ -155,9 +155,43 @@
 
   }
   #articulo {
-    max-width: 900px;        /* ancho máximo para que no se extienda demasiado */
-    margin: 40px auto;       /* centra horizontalmente y da espacio arriba/abajo */
+    max-width: 900px;
+    margin: 40px auto;
     padding: 20px;
-    border-radius: 10px;     /* esquinas redondeadas */
+    border-radius: 10px;
   }
   
+  @media (max-width: 768px){
+    #articulo{
+      max-width: 100%;
+      margin: 24px auto;
+      padding: 16px;
+    }
+  
+    #imgArticulos{
+      display:block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      margin: 12px auto;
+    }
+  
+    .nav ul{
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+  }
+  @media (min-width: 769px){
+    #articulo{
+      max-width: 900px;
+      padding: 20px;
+    }
+  
+    #imgArticulos{
+      display:block;
+      width: min(100%, 700px);
+      height: auto;
+      object-fit: contain;
+      margin: 16px auto;
+    }
+  }

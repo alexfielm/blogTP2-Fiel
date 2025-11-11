@@ -283,7 +283,6 @@
     color: white;
   }
   
-  /* ====== Responsive ====== */
   @media (max-width: 800px) {
     body {
       padding-left: 0;
