@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi vlog — Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="nav">
-    <ul>
-        <li><img src="./assets/logoWeb.png.jpeg" alt="logoWeb" style="width: 50px; object-fit: cover;"></li>
-        <li><a href="./test.html">Inicio</a></li>
-        <li><a href="./pages/articulos.html">Artículos</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-        <li><a href="./index.html">Linktree</a></li>
-    </ul>
-  </div>
+  <nav class="navbar navbar-expand-lg" style="background-color: rgb(167, 167, 13);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <picture>
+          <img src="./assets/logoWeb.png.jpeg" alt="logoWeb" style="width: 50px; object-fit: cover;">
+        </picture>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link" href="./test.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/articulos.html">Artículos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Linktree</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <div class="principal">
     <div class="contenido">
       <center>
-        <h1>Bienvenido a mi vlog</h1>
-        <p>En este vlog te mantendras informado sobre las ultimas novedades del mundo tech, sin cesgos ni favoritismos, <a href="./pages/articulos.html">explora los articulos</a> y conoce lo ultimo en tecnologia.</p>
-        <img src="./assets/imagenInicio.jpeg" alt="foto tech paz" style="padding-top: 1rem;">
+        <h1>Bienvenido a mi blog</h1>
+        <p>En este blog te mantendras informado sobre las ultimas novedades del mundo tech, sin cesgos ni favoritismos,
+          <a href="./pages/articulos.html">explora los articulos</a> y conoce lo ultimo en tecnologia.
+        </p>
+        <picture>
+          <img src="./assets/imagenInicio.jpeg" alt="foto tech paz" class="img-fluid hero-img"
+            style="padding-top: 1rem;">
+        </picture>
         <div class="news-container" style="padding-top: 2rem;">
           <a href="./articulos/articulo1.html" class="news-card">
-            <img src="./assets/appleWhatsapp.webp" alt="appleWhatsapp">
+            <picture>
+              <img src="./assets/appleWhatsapp.webp" alt="appleWhatsapp" loading="lazy">
+            </picture>
             <h3>Ya está disponible la versión de whatsapp para los apple watch</h3>
           </a>
-      
+
           <a href="./articulos/articulo2.html" class="news-card">
-            <img src="./assets/iphone17Rayado.jpg" alt="iphone17Rayado">
+            <picture>
+              <img src="./assets/iphone17Rayado.jpg" alt="iphone17Rayado" loading="lazy">
+            </picture>
             <h3>Los nuevos iPhone 17 se rayan muy facil</h3>
           </a>
-      
+
           <a href="./articulos/articulo3.html" class="news-card">
-            <img src="./assets/xiaomi17promax.avif" alt="xiaomi17promax">
+            <picture>
+              <img src="./assets/xiaomi17promax.avif" alt="xiaomi17promax" loading="lazy">
+            </picture>
             <h3>Xiaomi lanza su tope de gama con ciertas similitudes al iPhone 17 pro max de apple</h3>
           </a>
-      
+
           <a href="./articulos/articulo4.html" class="news-card">
-            <img src="./assets/m5mac.jpg" alt="m5mac">
+            <picture>
+              <img src="./assets/m5mac.jpg" alt="m5mac" loading="lazy">
+            </picture>
             <h3>Apple anuncia su nueva linea de procesadores M5</h3>
           </a>
           <a href="./articulos/articulo5.html" class="news-card">
-            <img src="./assets/atlasgpt.webp" alt="atlasgpt">
+            <picture>
+              <img src="./assets/atlasgpt.webp" alt="atlasgpt" loading="lazy">
+            </picture>
             <h3>OpenAI lanza su navegador web con IA integrada</h3>
           </a>
         </div>
       </center>
-      </div>
+    </div>
     <div class="aside">
       <div class="avatar">
         <h3>Hola, <br><span>Soy Alex</span></h3>
-        <img src="./assets/fotoWeb.jpeg" alt="Foto de Alex" id="avatar">
+        <picture>
+          <img src="./assets/fotoWeb.jpeg" alt="Foto de Alex" id="avatar" loading="lazy">
+        </picture>
       </div>
       <div class="separador">&nbsp;</div>
       <p>
@@ -65,21 +105,30 @@
         <li>
           <button>
             <a href="https://www.instagram.com/alexfielm/" target="_blank" rel="noopener" id="botones">
-              <img class="redes" src="https://img.icons8.com/?size=100&id=uw5dRncAbjq9&format=png&color=000000" alt="">Instagram
+              <picture>
+                <img class="redes" src="https://img.icons8.com/?size=100&id=uw5dRncAbjq9&format=png&color=000000" alt=""
+                  loading="lazy">
+              </picture>Instagram
             </a>
           </button>
         </li>
         <li>
           <button>
             <a href="https://github.com/alexfielm" target="_blank" rel="noopener" id="botones">
-              <img class="redes" src="https://img.icons8.com/?size=100&id=zuHqpgzrusU5&format=png&color=000000" alt="">GitHub
+              <picture>
+                <img class="redes" src="https://img.icons8.com/?size=100&id=zuHqpgzrusU5&format=png&color=000000" alt=""
+                  loading="lazy">
+              </picture>GitHub
             </a>
           </button>
         </li>
         <li>
           <button>
             <a href="https://www.linkedin.com/in/alex-fiel-machado/" target="_blank" rel="noopener" id="botones">
-              <img class="redes" src="https://img.icons8.com/?size=100&id=BRElTmOLC6Bh&format=png&color=000000" alt="">LinkedIn
+              <picture>
+                <img class="redes" src="https://img.icons8.com/?size=100&id=BRElTmOLC6Bh&format=png&color=000000" alt=""
+                  loading="lazy">
+              </picture>LinkedIn
             </a>
           </button>
         </li>
@@ -94,13 +143,32 @@
       </div>
     </div>
   </div>
-  <div class="footer">
-    <footer style="height: auto">
-        <center>
-        <h2>Web creada por Alex Sandro Fiel Machado</h2>
-        </center>
-    </footer>
-</div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <h4>Mapa del Sitio</h4>
+          <ul class="footer-sitemap">
+            <li><a href="./test.html">Inicio</a></li>
+            <li><a href="./pages/articulos.html">Artículos</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="./index.html">Linktree</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center">
+          <p>Web creada por Alex Sandro Fiel Machado</p>
+        </div>
+        <div class="col-md-4 text-end">
+          <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="btn btn-warning back-to-top">Volver
+            Arriba</button>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,34 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articulo 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../pages/stylecontact.css">
 </head>
-<body>
-    <div class="nav">
-        <center>
-       <ul>
-           <li><img src="../assets/logoWeb.png.jpeg" alt="logoWeb" style="width: 50px; object-fit: cover;"></li>
-           <li><a href="../test.html">Inicio</a></li>
-           <li><a href="../pages/articulos.html">Articulos</a></li>
-           <li><a href="../pages/contacto.html">Contacto</a></li>
-           <li><a href="../index.html">Linktree</a></li>
-       </ul>
-       </center>
-   </div>
-   <section style="padding-top: 1rem;" id="articulo">
-    <center>
-        <h1>Los nuevos iPhone 17 se rayan muy facil</h1>
-        <img src="../assets/iphone17Rayado.jpg" alt="iphone17Rayado" id="imgArticulos" style="padding-top: 1rem; padding-bottom: 1rem;">
-    </center>
-        <p>El llamado "ScratchGate" se ha generado debido a problemas de arañazos identificados en la parte trasera de los nuevos iPhone 17 Pro y 17 Pro Max. Este inconveniente se atribuye principalmente al diseño del módulo de cámaras, que presenta un borde afilado.
 
-            Diversos usuarios han denunciado el problema, especialmente en los modelos de color azul, a través de plataformas como X y Reddit, señalando que los smartphones muestran arañazos y rozaduras con el uso diario habitual.
-            
-            Adicionalmente, se han reportado otras manifestaciones del problema como marcas por el uso del cargador magsafe y arañazos en los bordes del modulo de camaras</p>
-    </section>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(167, 167, 13);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <picture>
+                    <img src="../assets/logoWeb.png.jpeg" alt="logoWeb" style="width: 50px; object-fit: cover;">
+                </picture>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../test.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/articulos.html">Articulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Linktree</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="principal">
+        <div class="contenido">
+            <section style="padding-top: 1rem;" id="articulo">
+                <center>
+                    <h1>Los nuevos iPhone 17 se rayan muy facil</h1>
+                    <picture>
+                        <img src="../assets/iphone17Rayado.jpg" alt="iphone17Rayado" id="imgArticulos"
+                            style="padding-top: 1rem; padding-bottom: 1rem;">
+                    </picture>
+                </center>
+                <p>El llamado "ScratchGate" se ha generado debido a problemas de arañazos identificados en la parte
+                    trasera de
+                    los nuevos iPhone 17 Pro y 17 Pro Max. Este inconveniente se atribuye principalmente al diseño del
+                    módulo de
+                    cámaras, que presenta un borde afilado.
+
+                    Diversos usuarios han denunciado el problema, especialmente en los modelos de color azul, a través
+                    de
+                    plataformas como X y Reddit, señalando que los smartphones muestran arañazos y rozaduras con el uso
+                    diario
+                    habitual.
+
+                    Adicionalmente, se han reportado otras manifestaciones del problema como marcas por el uso del
+                    cargador
+                    magsafe y arañazos en los bordes del modulo de camaras</p>
+            </section>
+            <nav aria-label="Navegación de artículos" class="my-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="./articulo1.html">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="./articulo2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="./articulo3.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="./articulo4.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="./articulo5.html">5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h4>Mapa del Sitio</h4>
+                    <ul class="footer-sitemap">
+                        <li><a href="../test.html">Inicio</a></li>
+                        <li><a href="../pages/articulos.html">Artículos</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                        <li><a href="../index.html">Linktree</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p>Web creada por Alex Sandro Fiel Machado</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+                        class="btn btn-warning back-to-top">Volver Arriba</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
