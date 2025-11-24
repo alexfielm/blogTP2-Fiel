@@ -182,6 +182,7 @@ hr {
 .avatar {
   margin-top: 10px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
@@ -190,6 +191,7 @@ hr {
 #avatar {
   width: 100px;
   height: 100px;
+  max-width: 100%;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #000;
@@ -209,6 +211,15 @@ hr {
 
 .aside ul li {
   margin: 8px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.aside ul li button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 200px;
 }
 
 button {
@@ -235,6 +246,7 @@ button:hover {
 }
 
 .redes {
+  /* esto edita las imagenes de los botones de redes no el boton en si, no confundir */
   width: 22px;
   height: 22px;
 }
@@ -245,6 +257,12 @@ button:hover {
   border-radius: 10px;
   padding: 14px;
   margin-top: 16px;
+  overflow-wrap: break-word;
+}
+
+.sub h2 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 body>.sub {
@@ -254,6 +272,7 @@ body>.sub {
 
 .sub form {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 8px;
 }
@@ -270,6 +289,7 @@ body>.sub {
 
 .sub input {
   flex: 1;
+  min-width: 0;
   padding: 0.5rem 0.65rem;
   border-radius: 10px;
   border: 1px solid #000;
@@ -348,35 +368,7 @@ body>.sub {
   color: white;
 }
 
-@media (max-width: 800px) {
-  body {
-    padding-left: 0;
-    padding-right: 0;
-  }
 
-  .principal {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .contenido,
-  .aside {
-    width: 100%;
-  }
-
-  .titulo {
-    position: absolute;
-    opacity: 0;
-  }
-
-  .footer {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    margin-left: 0;
-  }
-}
 
 .news-section {
   width: 90%;
@@ -420,20 +412,26 @@ body>.sub {
   body {
     padding-left: 0;
     padding-right: 0;
-    background-attachment: scroll;
   }
 
   .principal {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
   }
 
   .contenido,
   .aside {
-    width: 95%;
+    width: 100%;
     padding: 1rem;
+    padding-bottom: 1rem;
     margin: 0 auto;
+  }
+
+  .titulo {
+    position: absolute;
+    opacity: 0;
   }
 
   .contenido img {
@@ -460,7 +458,10 @@ body>.sub {
   }
 
   .footer {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    margin-top: 2rem;
     margin-left: 0;
     border-radius: 0;
   }
@@ -474,11 +475,11 @@ body>.sub {
   }
 
   .contenido {
-    width: 70%;
+    width: calc(70% - 12px);
   }
 
   .aside {
-    width: 30%;
+    width: calc(30% - 12px);
   }
 
   .news-container {
