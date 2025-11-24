@@ -241,6 +241,11 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   #articulo {
     max-width: 100%;
     margin: 24px auto;
@@ -261,7 +266,9 @@ h6 {
   }
 
   footer {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     margin-left: 0;
   }
 }
